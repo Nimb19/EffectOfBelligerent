@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GeneralLib.Logger
+namespace CommonLib.Logger
 {
     public interface ILogger
     {

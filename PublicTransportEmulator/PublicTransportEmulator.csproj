@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1F811E5-568A-4184-85C0-97F35FD3D98D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Debugger</RootNamespace>
-    <AssemblyName>Debugger</AssemblyName>
+    <ProjectGuid>{D6273204-3A54-411A-8EC3-8AB84A9D4302}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PublicTransportEmulator</RootNamespace>
+    <AssemblyName>PublicTransportEmulator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Models\BusAndComponents\INFSModuleReader.cs" />
+    <Compile Include="Models\EmulatorConfiguration.cs" />
+    <Compile Include="Models\ExternalServices\PaymentCard.cs" />
+    <Compile Include="Models\ServerModels\NFSModule.cs" />
+    <Compile Include="Models\ServerModels\PayService.cs" />
+    <Compile Include="Models\BusAndComponents\StandReader.cs" />
+    <Compile Include="Models\BusAndComponents\Validator.cs" />
+    <Compile Include="Models\ServerModels\Transaction.cs" />
+    <Compile Include="Models\TransportEmulator.cs" />
+    <Compile Include="Models\Territory\Branch.cs" />
+    <Compile Include="Models\BusAndComponents\Bus.cs" />
+    <Compile Include="Models\ClientModels\Human.cs" />
+    <Compile Include="Models\Territory\Map.cs" />
+    <Compile Include="Models\Territory\Road.cs" />
+    <Compile Include="Models\ServerModels\UserAccount.cs" />
+    <Compile Include="Models\Territory\BusStation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PyatigorskConfiguration.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonLib\CommonLib.csproj">
-      <Project>{204b59c1-c11a-4e6d-964b-8c4428116d8c}</Project>
+      <Project>{204B59C1-C11A-4E6D-964B-8C4428116D8C}</Project>
       <Name>CommonLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PublicTransportEmulator\PublicTransportEmulator.csproj">
-      <Project>{d6273204-3a54-411a-8ec3-8ab84a9d4302}</Project>
-      <Name>PublicTransportEmulator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

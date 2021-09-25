@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeneralLib
+namespace CommonLib.Models
 {
-    public class Class1
+    public class EmulatorConfiguration
     {
+        public Map Map { get; set; }
     }
 }
