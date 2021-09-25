@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Models\BusAndComponents\INFSModuleReader.cs" />
+    <Compile Include="Models\ExternalServices\PaymentCard.cs" />
+    <Compile Include="Models\ServerModels\NFSModule.cs" />
+    <Compile Include="Models\ServerModels\PayService.cs" />
+    <Compile Include="Models\BusAndComponents\StandReader.cs" />
+    <Compile Include="Models\BusAndComponents\Validator.cs" />
+    <Compile Include="Models\ServerModels\Transaction.cs" />
+    <Compile Include="PublicTransportEmulator.cs" />
     <Compile Include="Logger\AbstractLogger.cs" />
     <Compile Include="Logger\ConsoleLogger.cs" />
     <Compile Include="Logger\DebugLogger.cs" />
@@ -49,7 +56,15 @@
     <Compile Include="Logger\ILogger.cs" />
     <Compile Include="Logger\LoggerExtensions.cs" />
     <Compile Include="Logger\MultiLogger.cs" />
+    <Compile Include="Models\Territory\Branch.cs" />
+    <Compile Include="Models\BusAndComponents\Bus.cs" />
+    <Compile Include="Models\ClientModels\Human.cs" />
+    <Compile Include="Models\Territory\Map.cs" />
+    <Compile Include="Models\Territory\Road.cs" />
+    <Compile Include="Models\ServerModels\UserAccount.cs" />
+    <Compile Include="Models\Territory\StopOver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
