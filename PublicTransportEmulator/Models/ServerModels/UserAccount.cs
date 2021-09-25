@@ -10,6 +10,5 @@ namespace CommonLib.Models.ServerModels
     {
         public Guid Uid { get; }
         public string Name { get; }
-        List<Guid>
     }
 }

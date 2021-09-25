@@ -1,6 +1,7 @@
 ﻿using CommonLib.Logger;
 using CommonLib.Models;
 using CommonLib.Models.ServerModels;
+using System;
 using System.Collections.Generic;
 
 namespace CommonLib
@@ -23,20 +24,21 @@ namespace CommonLib
             {
                 for (int i = 0; i < branch.DefaultBusCount; i++)
                 {
+                    var busUid = Guid.NewGuid();
                     var validators = new List<Validator>() 
                     { 
-                        new Validator(payService), 
-                        new Validator(payService), 
-                        new Validator(payService) 
+                        new Validator(payService, busUid), 
+                        new Validator(payService, busUid), 
+                        new Validator(payService, busUid), 
                     };
 
                     var standReaders = new List<StandReader>() 
                     { 
-                        new StandReader(payService),
-                        new StandReader(payService),
-                        new StandReader(payService),
+                        new StandReader(payService, busUid),
+                        new StandReader(payService, busUid),
+                        new StandReader(payService, busUid),
                     };
-                    branch.Buses.Add(new Bus(validators, standReaders));
+                    branch.Buses.Add(new Bus(busUid, validators, standReaders));
                 }
             }   
         }

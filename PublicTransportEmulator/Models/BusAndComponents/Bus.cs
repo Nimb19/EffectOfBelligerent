@@ -20,11 +20,11 @@ namespace CommonLib.Models
         /// <summary> Безбилетник люди </summary>
         public int PeopleWithoutTickets => GeneralPeopleCount - PayedPeopleCount;
 
-        public Bus(List<Validator> validators, List<StandReader> standReaders)
+        public Bus(Guid busUid, List<Validator> validators, List<StandReader> standReaders)
         {
             Validators = validators;
             StandReaders = standReaders;
-            Uid = Guid.NewGuid();
+            Uid = busUid;
         }
     }
 }

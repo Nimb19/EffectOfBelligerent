@@ -9,8 +9,8 @@ namespace CommonLib.Models
     /// <summary> Остановка </summary>
     public class BusStation
     {
-        public string Name { get; set; }
-        public int Id { get; set; }
+        public string Name { get; }
+        public int Id { get; }
         public List<Road> Roads { get; } = new List<Road>();
 
         public BusStation(string name, int id)
