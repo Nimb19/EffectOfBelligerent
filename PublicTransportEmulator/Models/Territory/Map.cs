@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PublicTransportEmulator.Models
+namespace CommonLib.Models
 {
     /// <summary> Общая карта маршрутов по городу </summary>
     public class Map
     {
         /// <summary> Все остановки </summary>
-        public List<StopOver> StopOvers { get; set; }
+        public List<BusStation> BusStations { get; set; }
         /// <summary> Все ветки </summary>
         public List<Branch> Branches { get; set; }
 
-        public Map(List<StopOver> stopOvers, List<Branch> branches)
+        public Map(List<BusStation> busStations, List<Branch> branches)
         {
-            StopOvers = stopOvers;
+            BusStations = busStations;
             Branches = branches;
         }
     }

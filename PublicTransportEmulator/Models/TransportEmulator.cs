@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommonLib.Logger;
+using CommonLib.Models;
 
-namespace PublicTransportEmulator
+namespace CommonLib
 {
     public class TransportEmulator
     {
-        public TransportEmulator()
-        {
+        private Map _map;
+        private readonly ILogger _logger;
 
+        public TransportEmulator(Map map, ILogger logger)
+        {
+            _map = map;
+            _logger = logger;
         }
     }
 }

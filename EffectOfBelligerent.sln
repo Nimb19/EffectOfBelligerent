@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugger", "Debugger\Debugg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicTransportEmulator", "PublicTransportEmulator\PublicTransportEmulator.csproj", "{D6273204-3A54-411A-8EC3-8AB84A9D4302}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "CommonLib\CommonLib.csproj", "{204B59C1-C11A-4E6D-964B-8C4428116D8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D6273204-3A54-411A-8EC3-8AB84A9D4302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6273204-3A54-411A-8EC3-8AB84A9D4302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6273204-3A54-411A-8EC3-8AB84A9D4302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204B59C1-C11A-4E6D-964B-8C4428116D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204B59C1-C11A-4E6D-964B-8C4428116D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204B59C1-C11A-4E6D-964B-8C4428116D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204B59C1-C11A-4E6D-964B-8C4428116D8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

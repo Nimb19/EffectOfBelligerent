@@ -50,22 +50,20 @@
     <Compile Include="Models\BusAndComponents\Validator.cs" />
     <Compile Include="Models\ServerModels\Transaction.cs" />
     <Compile Include="Models\TransportEmulator.cs" />
-    <Compile Include="Logger\AbstractLogger.cs" />
-    <Compile Include="Logger\ConsoleLogger.cs" />
-    <Compile Include="Logger\DebugLogger.cs" />
-    <Compile Include="Logger\FileLogger.cs" />
-    <Compile Include="Logger\ILogger.cs" />
-    <Compile Include="Logger\LoggerExtensions.cs" />
-    <Compile Include="Logger\MultiLogger.cs" />
     <Compile Include="Models\Territory\Branch.cs" />
     <Compile Include="Models\BusAndComponents\Bus.cs" />
     <Compile Include="Models\ClientModels\Human.cs" />
     <Compile Include="Models\Territory\Map.cs" />
     <Compile Include="Models\Territory\Road.cs" />
     <Compile Include="Models\ServerModels\UserAccount.cs" />
-    <Compile Include="Models\Territory\StopOver.cs" />
+    <Compile Include="Models\Territory\BusStation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{204B59C1-C11A-4E6D-964B-8C4428116D8C}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

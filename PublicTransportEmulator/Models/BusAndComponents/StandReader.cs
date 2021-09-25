@@ -1,12 +1,12 @@
-﻿using PublicTransportEmulator.Models.BusAndComponents;
-using PublicTransportEmulator.Models.ServerModels;
+﻿using CommonLib.Models.BusAndComponents;
+using CommonLib.Models.ServerModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PublicTransportEmulator.Models
+namespace CommonLib.Models
 {
     public class StandReader : INFSModuleReader
     {

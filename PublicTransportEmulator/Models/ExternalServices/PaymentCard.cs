@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PublicTransportEmulator.Models.ExternalServices
+namespace CommonLib.Models.ExternalServices
 {
     public class PaymentCard
     {

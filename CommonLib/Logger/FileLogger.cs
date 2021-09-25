@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace PublicTransportEmulator.Logger
+namespace CommonLib.Logger
 {
     public sealed class FileLogger : AbstractLogger
     {
