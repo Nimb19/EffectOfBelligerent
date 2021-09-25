@@ -13,9 +13,9 @@ namespace CommonLib.Models
 
         private PayServiceController _paySerrvice;
 
-        public Validator(Guid uid, PayServiceController paySerrvice)
+        public Validator(PayServiceController paySerrvice)
         {
-            Uid = uid;
+            Uid = Guid.NewGuid();
             _paySerrvice = paySerrvice;
         }
     }

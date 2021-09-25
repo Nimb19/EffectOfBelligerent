@@ -14,9 +14,9 @@ namespace CommonLib.Models
 
         private PayServiceController _paySerrvice;
 
-        public StandReader(Guid uid, PayServiceController paySerrvice)
+        public StandReader(PayServiceController paySerrvice)
         {
-            Uid = uid;
+            Uid = Guid.NewGuid();
             _paySerrvice = paySerrvice;
         }
     }

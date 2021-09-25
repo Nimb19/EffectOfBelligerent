@@ -9,6 +9,5 @@ namespace CommonLib.Models.ServerModels
     public class Transaction
     {
         public DateTime TrnsCreateTime { get; }
-        public int MyProperty { get; set; }
     }
 }

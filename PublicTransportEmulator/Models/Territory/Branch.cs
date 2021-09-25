@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CommonLib.Models
 {
-    /// <summary> Ветка </summary>
+    /// <summary> Ветка поездок по городу </summary>
     public class Branch
     {
-        /// <summary> Остановки по порядку от первой и до последней </summary>
+        /// <summary> Остановки по порядку от первой и до последней (их id) </summary>
         public List<int> BusStations { get; }
-        public List<Bus> Buses { get; internal set; }
+        public List<Bus> Buses { get; } = new List<Bus>();
 
         public int Id { get; }
         public int DefaultBusCount { get; }

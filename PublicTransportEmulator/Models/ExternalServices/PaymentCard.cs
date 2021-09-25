@@ -9,13 +9,14 @@ namespace CommonLib.Models.ExternalServices
     public class PaymentCard
     {
         public Guid Uid { get; }
-        public string HumanName { get; }
+        /// <summary> Имя человека, за кем карта </summary>
+        public string HolderName { get; }
         public double Money { get; private set; }
 
         public PaymentCard(Guid uid, string humanName, double money)
         {
             Uid = uid;
-            HumanName = humanName;
+            HolderName = humanName;
             Money = money;
         }
 

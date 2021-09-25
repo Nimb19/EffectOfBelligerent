@@ -30,6 +30,7 @@ namespace Debugger
                 .CreatePyatigorskConfiguration();
 
             var emulator = new TransportEmulator(map, logger);
+            emulator.StartEmulator();
         }
 
         private static ILogger CreateLogger()

@@ -1,21 +1,33 @@
-﻿using CommonLib.Models.ExternalServices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommonLib.Logger;
+using CommonLib.Models.ExternalServices;
 
 namespace CommonLib.Models.ServerModels
 {
     public class PayServiceController
     {
-        private PaymentCard _card;
-        private UserAccount _userAccount;
+        ILogger _logger;
 
-        public PayServiceController(PaymentCard card, UserAccount userAccount)
+        public PayServiceController(ILogger logger)
         {
-            _card = card;
-            _userAccount = userAccount;
+            _logger = logger;
+            _logger.WriteLine("Инициализация PayServiceController");
+        }
+
+        public bool MakePayment(PaymentCard paymentCard, double money)
+        {
+            _logger.WriteLine($"Оплата от {paymentCard.HolderName} в количестве {money}");
+
+            var payment = paymentCard.Pay(money);
+            if (payment)
+            {
+                _logger.WriteLine($"Оплата прошла успешно!");
+                return true;
+            }
+            else
+            {
+                _logger.WriteLine($"Оплата не была совершена.");
+                return false;
+            }
         }
     }
 }
