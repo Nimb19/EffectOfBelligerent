@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeneralLib.Models
+namespace PublicTransportEmulator.Models
 {
     /// <summary> Общая карта маршрутов по городу </summary>
     public class Map

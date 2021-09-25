@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeneralLib
+namespace PublicTransportEmulator.Models
 {
-    public class PublicTransportEmulator
+    public class EmulatorConfiguration
     {
     }
 }

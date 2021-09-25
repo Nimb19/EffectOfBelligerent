@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugger", "Debugger\Debugger.csproj", "{B1F811E5-568A-4184-85C0-97F35FD3D98D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralLib", "GeneralLib\GeneralLib.csproj", "{D6273204-3A54-411A-8EC3-8AB84A9D4302}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicTransportEmulator", "PublicTransportEmulator\PublicTransportEmulator.csproj", "{D6273204-3A54-411A-8EC3-8AB84A9D4302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

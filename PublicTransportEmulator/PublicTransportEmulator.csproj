@@ -7,8 +7,8 @@
     <ProjectGuid>{D6273204-3A54-411A-8EC3-8AB84A9D4302}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GeneralLib</RootNamespace>
-    <AssemblyName>GeneralLib</AssemblyName>
+    <RootNamespace>PublicTransportEmulator</RootNamespace>
+    <AssemblyName>PublicTransportEmulator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,13 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\BusAndComponents\INFSModuleReader.cs" />
+    <Compile Include="Models\EmulatorConfiguration.cs" />
     <Compile Include="Models\ExternalServices\PaymentCard.cs" />
     <Compile Include="Models\ServerModels\NFSModule.cs" />
     <Compile Include="Models\ServerModels\PayService.cs" />
     <Compile Include="Models\BusAndComponents\StandReader.cs" />
     <Compile Include="Models\BusAndComponents\Validator.cs" />
     <Compile Include="Models\ServerModels\Transaction.cs" />
-    <Compile Include="PublicTransportEmulator.cs" />
+    <Compile Include="Models\TransportEmulator.cs" />
     <Compile Include="Logger\AbstractLogger.cs" />
     <Compile Include="Logger\ConsoleLogger.cs" />
     <Compile Include="Logger\DebugLogger.cs" />

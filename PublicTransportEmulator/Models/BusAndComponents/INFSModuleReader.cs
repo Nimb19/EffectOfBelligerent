@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeneralLib.Models.BusAndComponents
+namespace PublicTransportEmulator.Models.BusAndComponents
 {
     public interface INFSModuleReader
     {

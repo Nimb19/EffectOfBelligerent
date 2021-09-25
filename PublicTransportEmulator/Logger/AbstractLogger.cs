@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GeneralLib.Logger
+namespace PublicTransportEmulator.Logger
 {
     public abstract class AbstractLogger : ILogger
     {

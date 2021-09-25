@@ -1,11 +1,11 @@
-﻿using GeneralLib.Models.ExternalServices;
+﻿using PublicTransportEmulator.Models.ExternalServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeneralLib.Models.ServerModels
+namespace PublicTransportEmulator.Models.ServerModels
 {
     public class PayServiceController
     {
