@@ -3,6 +3,7 @@ using CommonLib.Models;
 using CommonLib.Models.ServerModels;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CommonLib
 {
@@ -19,6 +20,7 @@ namespace CommonLib
 
         public void StartEmulator()
         {
+            var tasks = new List<Task>();
             var payService = new PayServiceController(_logger);
             foreach (var branch in _map.Branches)
             {
@@ -40,7 +42,25 @@ namespace CommonLib
                     };
                     branch.Buses.Add(new Bus(busUid, validators, standReaders));
                 }
-            }   
+            }
+
+            foreach (var branch in _map.Branches)
+            {
+                BranchEmulator(branch);
+            }
+        }
+
+        private void BranchEmulator(Branch branch)
+        {
+            foreach (var bus in branch.Buses)
+            {
+                Task.Run(() => BusEmulator(bus));
+            }
+        }
+
+        private void BusEmulator(Bus bus)
+        {
+            bus.
         }
     }
 }

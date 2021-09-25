@@ -10,8 +10,13 @@ namespace CommonLib.Models
     {
         public Guid Uid { get; }
         public List<Validator> Validators { get; }
-        public List<StandReader> StandReaders { get; }
         public List<Human> People { get; }
+        public List<StandReader> StandReaders { get; }
+        public const int MaxPeople = 20;
+
+        public BusStation CurrentStation { get; set; }
+        public BusStation NextStation { get; set; }
+
 
         /// <summary> Общее кол-во людей </summary>
         public int GeneralPeopleCount { get; }
