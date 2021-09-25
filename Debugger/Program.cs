@@ -26,9 +26,8 @@ namespace Debugger
 
         private static void Start(ILogger logger)
         {
-            var busStations = new List<BusStation>();
-            var busBranches = new List<Branch>();
-            var map = new Map(busStations, busBranches);
+            var map = new PyatigorskConfiguration()
+                .CreatePyatigorskConfiguration();
 
             var emulator = new TransportEmulator(map, logger);
         }

@@ -10,7 +10,17 @@ namespace CommonLib.Models
     public class Branch
     {
         /// <summary> Остановки по порядку от первой и до последней </summary>
-        public List<BusStation> StopOvers { get; }
-        public List<Bus> Buses { get; }
+        public List<int> BusStations { get; }
+        public List<Bus> Buses { get; internal set; }
+
+        public int Id { get; }
+        public int DefaultBusCount { get; }
+
+        public Branch(int id, int defaultBusCount, List<int> orderedBusStations)
+        {
+            BusStations = orderedBusStations;
+            Id = id;
+            DefaultBusCount = defaultBusCount;
+        }
     }
 }

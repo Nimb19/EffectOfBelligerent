@@ -10,17 +10,18 @@ namespace CommonLib.Models
     public class Road
     {
         /// <summary> Ведёт к остановке </summary>
-        public BusStation LeadsIn { get; set; }
+        public BusStation LeadsIn { get; internal set; }
         /// <summary> Ведёт от остановки </summary>
-        public BusStation LeadsOut { get; set; }
+        public BusStation LeadsOut { get; internal set; }
 
         public int Distance { get; }
 
-        public Road(int distance, BusStation leadsIn, BusStation leadsOut)
+        public Road(int distance, BusStation leadsInStation, BusStation leadsOutStation)
         {
             Distance = distance;
-            LeadsIn = leadsIn;
-            LeadsOut = leadsOut;
+            LeadsIn = leadsInStation;
+            LeadsOut = leadsOutStation;
+            leadsInStation.Roads.Add(this);
         }
     }
 }
