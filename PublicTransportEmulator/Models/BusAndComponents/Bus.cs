@@ -15,7 +15,6 @@ namespace CommonLib.Models
         public const int MaxPeople = 20;
 
         public BusStation CurrentStation { get; set; }
-        public BusStation NextStation { get; set; }
 
 
         /// <summary> Общее кол-во людей </summary>

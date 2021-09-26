@@ -12,6 +12,7 @@ namespace CommonLib.Models
         public string Name { get; }
         public int Id { get; }
         public List<Road> Roads { get; } = new List<Road>();
+        public List<Bus> Buses { get; set; } = new List<Bus>();
 
         public BusStation(string name, int id)
         {
